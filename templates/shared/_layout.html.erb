@@ -1,12 +1,22 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title><%= title %></title>
-    <link href='css/groovy.css' type='text/css' />
-    <script type='text/javascript' src='js/crazy.js'></script>
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
   </head>
-
   <body>
-    <%= yield %>
+    <div class="navbar">
+      <div class="navbar-inner navbar-fixed-top">
+        <div class="container">
+          <a class="brand" href="#">
+            Brochure
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
-
