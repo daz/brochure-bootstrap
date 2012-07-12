@@ -1,7 +1,7 @@
 guard :pow do
   watch('Gemfile')
+  watch('Gemfile.lock')
   watch('config.ru')
-  watch(%r{^templates/.+\.(css|s[ac]ss|js|coffee|html|erb)})
 end
 
 guard :livereload do
