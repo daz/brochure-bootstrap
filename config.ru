@@ -1,10 +1,8 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'brochure'
-require 'rack/contrib'
-require 'rack/cache'
 
-use Rack::Cache
+use Rack::ConditionalGet
 use Rack::ETag
 
 root = File.dirname(__FILE__)
